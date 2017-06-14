@@ -6,4 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'minitest'
+gem 'rack'
+gem 'rest-client'
 gem 'rubocop'
+gem 'thin'

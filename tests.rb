@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'rest-client'
 
 require_relative 'service'
 
@@ -17,5 +18,11 @@ class Test < Minitest::Test
 
   def test_scenario_3
     assert Service.instance.read_captcha('captchas/3.jpg') == 'zvpyc'
+  end
+
+  def test_endpoint
+    url = 'localhost:3000'
+    response = RestClient.post(url, captcha: File.open('captchas/0.jpg'))
+    assert response == 'n7f85'
   end
 end
