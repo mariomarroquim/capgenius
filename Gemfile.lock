@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.2.0)
+    minitest (5.10.2)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    rmagick (2.16.0)
+    rtesseract (2.1.0)
+      nokogiri
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest
+  rmagick
+  rtesseract
+
+BUNDLED WITH
+   1.15.1
